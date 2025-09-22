@@ -1,0 +1,11 @@
+# General
+.DS_Store
+__MACOSX/
+.AppleDouble
+.LSOverride
+Icon[
+]
+
+# Cursor
+.cursorignore
+.cursorindexingignore
