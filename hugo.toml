@@ -2,7 +2,6 @@ baseURL = 'https://codeafterdark.dev/'
 languageCode = 'en-us'
 title = 'code after dark'
 theme = 'm10c'
-canonifyURLs = true
 
 [params]
 ShowReadingTime = true
