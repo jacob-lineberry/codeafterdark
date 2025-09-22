@@ -4,7 +4,6 @@ title = 'code after dark'
 theme = 'm10c'
 
 [params]
-
 author = "Jacob Lineberry"
 description = "Code, cloud, and late-night experiments."
 menu_item_separator = " - "
