@@ -1,0 +1,11 @@
+baseURL = 'https://codeafterdark.dev'
+languageCode = 'en-us'
+title = 'code after dark'
+theme = 'm10c'
+
+[params]
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
