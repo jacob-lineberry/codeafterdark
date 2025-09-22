@@ -1,6 +1,6 @@
 +++
 date = '2025-09-22T15:28:01-04:00'
-draft = true
+draft = false
 title = 'Hello World'
 tags = ['go', 'programming', 'intro']
 author = 'Jacob Lineberry'
