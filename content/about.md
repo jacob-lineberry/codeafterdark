@@ -2,7 +2,6 @@
 title: "About"
 date: 2025-01-01
 draft: false
-description: "Learn more about the mind behind code after dark"
 showToc: false
 TocOpen: false
 hidemeta: true
@@ -15,7 +14,7 @@ ShowBreadCrumbs: false
 ShowPostNavLinks: false
 ShowWordCount: false
 cover:
-    image: "/avatar.png"
+    image: ""
     alt: "Jacob Lineberry"
     caption: ""
     relative: false
