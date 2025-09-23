@@ -55,8 +55,9 @@ showRelatedPosts = true
 
 # Home page - straight to content
 [params.homeInfoParams]
-enabled = false
-imageUrl = '/avatar.png'
+enabled = true
+title = "Jacob Lineberry"
+subtitle = "Code, cloud, and late-night thoughts."
 
 # Clean social presence
 [[params.socialIcons]]
@@ -108,7 +109,6 @@ safari_pinned_tab = '/safari-pinned-tab.svg'
 # Terminal-style branding
 [params.label]
 text = '~/'
-icon = '/favicon.ico'
 iconHeight = 35
 
 # Analytics (uncomment when ready)
@@ -184,6 +184,11 @@ weight = 1
 subtitle = 'Production-ready insights'
 
 [[languages.en.menu.main]]
+name = 'About'
+url = '/about/'
+weight = 25
+
+[[languages.en.menu.main]]
 name = 'Search'
 url = '/search/'
 weight = 10
@@ -192,11 +197,6 @@ weight = 10
 name = 'Tags'
 url = '/tags/'
 weight = 15
-
-[[languages.en.menu.main]]
-name = 'About'
-url = '/about/'
-weight = 25
 
 # Output formats for search
 [outputs]
