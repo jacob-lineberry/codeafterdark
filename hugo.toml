@@ -64,6 +64,10 @@ name = 'github'
 url = 'https://github.com/jacob-lineberry'
 
 [[params.socialIcons]]
+name = 'bluesky'
+url = 'https://bsky.app/profile/dammitjacob.bsky.social'
+
+[[params.socialIcons]]
 name = 'email'
 url = 'mailto:jlineberry@gmail.com'
 

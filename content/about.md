@@ -15,11 +15,10 @@ ShowBreadCrumbs: false
 ShowPostNavLinks: false
 ShowWordCount: false
 cover:
-    image: ""
-    alt: ""
+    image: "/avatar.png"
+    alt: "Jacob Lineberry"
     caption: ""
     relative: false
-    hidden: true
 ---
 
 # `whoami`
