@@ -21,6 +21,10 @@ description = "Code, cloud, and late-night thoughts."
 defaultTheme = "dark"
 disableThemeToggle = true
 
+[params.homeInfoParams]
+Title = "code after dark"
+Content = "Code, cloud, and late-night thoughts."
+
 [[params.socialIcons]]
 name = 'github'
 url = 'https://github.com/jacob-lineberry'
