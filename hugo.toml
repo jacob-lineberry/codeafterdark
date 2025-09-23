@@ -57,6 +57,19 @@ showRelatedPosts = true
 [params.homeInfoParams]
 enabled = true
 title = "code after dark"
+subtitle = "$ whoami && cat ~/.thoughts"
+content = """
+```bash
+jacob@localhost:~$ ls ~/interests/
+devops/  kubernetes/  golang/  platform-engineering/  late-night-debugging/
+
+jacob@localhost:~$ cat mission.txt
+Sharing production-ready insights and hard-earned lessons 
+from building scalable systems in the cloud.
+```
+
+Welcome to my digital workshop. Pull up a terminal and stay awhile. ☕
+"""
 
 # Clean social presence
 [[params.socialIcons]]
