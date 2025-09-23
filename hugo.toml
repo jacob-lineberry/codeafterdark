@@ -162,8 +162,8 @@ unsafe = true
 xhtml = false
 
 [markup.highlight]
-lineNos = true
-anchorLineNos = true
+lineNos = false
+anchorLineNos = false
 codeFences = true
 guessSyntax = true
 hl_inline = false
