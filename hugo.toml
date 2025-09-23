@@ -56,8 +56,7 @@ showRelatedPosts = true
 # Home page - straight to content
 [params.homeInfoParams]
 enabled = true
-title = "Jacob Lineberry"
-subtitle = "Code, cloud, and late-night thoughts."
+title = "code after dark"
 
 # Clean social presence
 [[params.socialIcons]]
