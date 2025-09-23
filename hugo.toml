@@ -31,6 +31,7 @@ keywords = [
     'CI/CD',
 ]
 author = 'Jacob Lineberry'
+avatar = '/avatar.png'
 defaultTheme = 'dark'
 disableThemeToggle = true
 DateFormat = 'Jan 2, 2006'
