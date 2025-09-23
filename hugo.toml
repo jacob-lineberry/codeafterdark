@@ -32,7 +32,7 @@ keywords = [
 ]
 author = 'Jacob Lineberry'
 defaultTheme = 'dark'
-disableThemeToggle = false
+disableThemeToggle = true
 DateFormat = 'Jan 2, 2006'
 ShowReadingTime = true
 ShowShareButtons = false
@@ -183,11 +183,6 @@ weight = 1
 subtitle = 'Production-ready insights'
 
 [[languages.en.menu.main]]
-name = 'Archive'
-url = '/archives/'
-weight = 5
-
-[[languages.en.menu.main]]
 name = 'Search'
 url = '/search/'
 weight = 10
@@ -196,11 +191,6 @@ weight = 10
 name = 'Tags'
 url = '/tags/'
 weight = 15
-
-[[languages.en.menu.main]]
-name = 'Series'
-url = '/series/'
-weight = 20
 
 [[languages.en.menu.main]]
 name = 'About'
