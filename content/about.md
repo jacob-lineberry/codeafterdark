@@ -20,14 +20,6 @@ ShowWordCount: false
 
 ```bash
 Jacob Lineberry | Platform Engineer | Network nerd
-
-jacob@localhost:~$ ls ~/interests/
-golang/  devops/  network-protocols/  late-night-debugging/
-
-jacob@localhost:~$ cat mission.txt
-Sharing production-ready insights and hard-earned lessons 
-from building scalable systems in the cloud.
-
 ```
 
 ---
