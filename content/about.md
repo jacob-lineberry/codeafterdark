@@ -16,8 +16,9 @@ ShowPostNavLinks: false
 ShowWordCount: false
 ---
 
+## `whoami`
+
 ```bash
-jacob@localhost:~$ whoami
 Jacob Lineberry | Platform Engineer | Network nerd
 
 jacob@localhost:~$ ls ~/interests/
@@ -29,38 +30,20 @@ from building scalable systems in the cloud.
 
 ```
 
-Welcome to my digital workshop. Pull up a terminal and stay awhile. ☕
-
 ---
 
-## `./current_stack.sh`
+## `ls -la ~/bin/`
 
-```yaml
-languages:
-  primary: ["Go", "Python", "Bash"]
-  exploring: ["Java"]
-  
-infrastructure:
-  cloud: ["AWS", "GCP"]
-  orchestration: ["Kubernetes", "Docker"]
-  iac: ["Terraform", "Pulumi", "Ansible"]
-  
-databases:
-  relational: ["PostgreSQL", "MySQL"]
-  nosql: ["DynamoDB", "Redis"]
-  
-tools:
-  monitoring: ["Prometheus", "Grafana", "Datadog"]
-  ci_cd: ["GitHub Actions", "Jenkins"]
-  
-interests:
-  - distributed_systems
-  - platform_engineering
-  - developer_experience
-  - performance_optimization
+```bash
+-rwxr-xr-x  go*
+-rwxr-xr-x  python3*    
+-rwxr-xr-x  bash*     
+-rwxr-xr-x  terraform*    
+-rwxr-xr-x  kubernetes*      
+-rwxr-xr-x  docker* 
 ```
 
-## `git log --oneline --author="Jacob"`
+## `history`
 
 ```diff
 + 2021: Platform Engineer @ CHEWY
@@ -68,26 +51,6 @@ interests:
 + 2018: Senior Platform Engineer @ DYCOM INDUSTRIES
 + 2015: Senior Network Engineer @ DYCOM INDUSTRIES
 ```
-
-## `cat ~/.motivation`
-
-I believe in:
-
-- 🚀 **Automation over repetition** - If you're doing it twice, script it
-- 📚 **Learning in public** - Share knowledge, grow together  
-- 🔧 **Pragmatic solutions** - The best code is code that works and can be maintained
-- 🌙 **Late-night coding sessions** - Some of the best ideas come after dark
-
-## `echo $BLOG_FOCUS`
-
-I write about the intersection of **DevOps**, **platform engineering**, and **developer experience**. 
-From Kubernetes clusters to CI/CD pipelines, I share what I've learned building systems that actually work in production.
-
-**Recent topics:**
-- Production-scale challenges and their solutions
-- Platform engineering best practices
-- Performance optimization techniques
-- Tools that make developers' lives easier
 
 ## `echo $CONTACT_ME`
 
