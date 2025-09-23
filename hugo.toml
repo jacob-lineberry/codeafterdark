@@ -1,7 +1,7 @@
 baseURL = 'https://codeafterdark.dev'
 languageCode = 'en-us'
 title = 'code after dark'
-theme = 'm10c'
+theme = ['PaperMod']
 
 [menu]
 [[menu.main]]
