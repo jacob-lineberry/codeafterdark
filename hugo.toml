@@ -60,6 +60,10 @@ title = "code after dark"
 
 # Clean social presence
 [[params.socialIcons]]
+name = 'LinkedIn'
+url = 'https://www.linkedin.com/in/jacoblineberry/'
+
+[[params.socialIcons]]
 name = 'github'
 url = 'https://github.com/jacob-lineberry'
 
