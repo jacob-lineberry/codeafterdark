@@ -54,9 +54,14 @@ ShowLastMod = true
 hideFooter = false
 showRelatedPosts = true
 
-# Home page - straight to content
-[params.homeInfoParams]
-enabled = false
+[params.profileMode]
+enabled = true
+title = "Jacob Lineberry"
+subtitle = "Code, cloud, and late-night thoughts."
+imageUrl = "/avatar.png"
+imageTitle = "Jacob Lineberry"
+imageWidth = 120
+imageHeight = 120
 
 # Clean social presence
 [[params.socialIcons]]
