@@ -57,9 +57,8 @@ showRelatedPosts = true
 [params.homeInfoParams]
 enabled = true
 title = "code after dark"
-subtitle = "Building systems that don't break at 3 AM"
 content = """
-Platform engineering insights, cloud architecture patterns, and lessons learned from production environments.
+Code, cloud, and late-night thoughts.
 """
 
 # Clean social presence
