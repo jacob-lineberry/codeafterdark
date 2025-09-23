@@ -2,38 +2,25 @@ baseURL = 'https://codeafterdark.dev'
 languageCode = 'en-us'
 title = 'code after dark'
 theme = ['PaperMod']
+paginate = 10
+enableRobotsTXT = true
+enableEmoji = true
+enableGitInfo = true
 
-[menu]
-[[menu.main]]
-identifier = "home"
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
-identifier = "tags"
-name = "Tags"
-url = "/tags/"
-weight = 2
-
-[[menu.main]]
-identifier = "about"
-name = "About"
-url = "/about/"
-weight = 3
+[minify]
+disableXML = true
+minifyOutput = true
 
 [params]
 author = "Jacob Lineberry"
-description = "Code, cloud, and late-night experiments."
-menu_item_separator = " - "
-favicon = "images/favicon.ico"
+description = "Code, cloud, and late-night thoughts."
+defaultTheme = "dark"
+disableThemeToggle = true
 
-[[params.social]]
-icon = "brand-github"
-name = "GitHub"
-url = "https://github.com/jacob-lineberry"
+[[params.socialIcons]]
+name = 'github'
+url = 'https://github.com/jacob-lineberry'
 
-[[params.social]]
-icon = "brand-bluesky"
-name = "Bluesky"
-url = "https://bsky.app/profile/dammitjacob.bsky.social"
+[[params.socialIcons]]
+name = 'email'
+url = 'mailto:jlineberry@gmail.com'
