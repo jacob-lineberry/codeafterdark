@@ -86,3 +86,138 @@
     content: "$ ";
     color: var(--synthwave-neon-green);
 }
+
+/* === ENHANCED POLISH & ANIMATIONS === */
+
+/* Add smooth transitions everywhere */
+.dark * {
+    transition: color 0.2s ease, text-shadow 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* Pulse animation for the logo */
+.dark .logo a {
+    animation: subtle-pulse 3s ease-in-out infinite;
+}
+
+@keyframes subtle-pulse {
+
+    0%,
+    100% {
+        text-shadow: 0 0 10px var(--synthwave-pink);
+    }
+
+    50% {
+        text-shadow: 0 0 15px var(--synthwave-pink), 0 0 25px rgba(255, 0, 128, 0.5);
+    }
+}
+
+/* Hover effects for post cards */
+.dark .post-entry:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 255, 255, 0.15);
+}
+
+/* === ENHANCED TYPOGRAPHY === */
+
+/* Main title with gradient effect */
+.dark .main .profile .title {
+    font-size: 3rem;
+    background: linear-gradient(45deg, var(--synthwave-cyan), var(--synthwave-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+/* Breadcrumbs styling */
+.dark .breadcrumbs a {
+    color: var(--synthwave-cyan);
+    opacity: 0.7;
+}
+
+.dark .breadcrumbs a:hover {
+    opacity: 1;
+    text-shadow: 0 0 3px var(--synthwave-cyan);
+}
+
+/* === ENHANCED SOCIAL ICONS === */
+
+/* Social icons glow */
+.dark .social-icons a {
+    transition: all 0.3s ease;
+}
+
+.dark .social-icons a:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px currentColor);
+}
+
+/* === ENHANCED CODE BLOCKS === */
+
+/* Better code block styling */
+.dark .highlight pre {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d1117 100%);
+    border-radius: 8px;
+}
+
+/* Copy button styling */
+.dark .copy-code {
+    background: var(--synthwave-purple);
+    color: white;
+    border: 1px solid var(--synthwave-cyan);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 0.8em;
+    transition: all 0.2s ease;
+}
+
+.dark .copy-code:hover {
+    background: var(--synthwave-pink);
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.3);
+}
+
+/* === ENHANCED READING EXPERIENCE === */
+
+/* Better text readability */
+.dark .post-content p {
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Quote styling */
+.dark blockquote {
+    border-left: 3px solid var(--synthwave-cyan);
+    background: rgba(0, 255, 255, 0.05);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Enhanced tag spacing and hover effects */
+.dark .post-tags a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.4);
+}
+
+/* Focus states for keyboard navigation */
+.dark a:focus,
+.dark button:focus {
+    outline: 2px solid var(--synthwave-cyan);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Post meta text styling */
+.dark .post-meta {
+    color: rgba(0, 255, 255, 0.7);
+}
+
+/* Enhanced post entry styling */
+.dark .post-entry {
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.dark .post-entry:hover .post-title {
+    color: var(--synthwave-cyan);
+}

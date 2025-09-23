@@ -184,17 +184,14 @@ tag = 'tags'
 languageName = 'EN'
 weight = 1
 
-[languages.en.params]
-subtitle = 'Production-ready insights'
-
 [[languages.en.menu.main]]
-name = 'About'
+name = 'about'
 url = '/about/'
 weight = 10
 
 [[languages.en.menu.main]]
-name = 'RSS'
-url = '/index.xml'
+name = 'archives'
+url = '/archives/'
 weight = 15
 
 # Output formats for search
