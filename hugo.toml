@@ -31,7 +31,6 @@ keywords = [
     'CI/CD',
 ]
 author = 'Jacob Lineberry'
-avatar = '/avatar.png'
 defaultTheme = 'dark'
 disableThemeToggle = true
 DateFormat = 'Jan 2, 2006'
@@ -54,14 +53,10 @@ ShowLastMod = true
 hideFooter = false
 showRelatedPosts = true
 
-[params.profileMode]
-enabled = true
-title = "Jacob Lineberry"
-subtitle = "Code, cloud, and late-night thoughts."
-imageUrl = "/avatar.png"
-imageTitle = "Jacob Lineberry"
-imageWidth = 120
-imageHeight = 120
+# Home page - straight to content
+[params.homeInfoParams]
+enabled = false
+imageUrl = '/avatar.png'
 
 # Clean social presence
 [[params.socialIcons]]
