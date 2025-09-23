@@ -2,7 +2,6 @@ baseURL = 'https://codeafterdark.dev'
 languageCode = 'en-us'
 title = 'code after dark'
 theme = ['PaperMod']
-paginate = 10
 enableRobotsTXT = true
 enableEmoji = true
 enableGitInfo = true
