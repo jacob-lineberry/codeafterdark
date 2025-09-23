@@ -1,0 +1,88 @@
+/* Synthwave color palette */
+:root {
+    --synthwave-pink: #ff0080;
+    --synthwave-purple: #8a2be2;
+    --synthwave-cyan: #00ffff;
+    --synthwave-neon-green: #39ff14;
+    --synthwave-orange: #ff6600;
+    --synthwave-dark: #0a0a0a;
+    --synthwave-darker: #050505;
+}
+
+/* Custom text colors for dark theme */
+.dark {
+    /* Accent colors for links */
+    --primary: var(--synthwave-cyan);
+    --secondary: var(--synthwave-pink);
+    --tertiary: var(--synthwave-purple);
+}
+
+/* Header styling */
+.dark .logo a {
+    color: var(--synthwave-pink);
+    text-shadow: 0 0 10px var(--synthwave-pink);
+}
+
+/* Menu items */
+.dark #menu a {
+    color: var(--synthwave-cyan);
+    transition: all 0.3s ease;
+}
+
+.dark #menu a:hover {
+    color: var(--synthwave-pink);
+    text-shadow: 0 0 5px var(--synthwave-pink);
+}
+
+/* Post titles */
+.dark .post-title a {
+    color: var(--synthwave-pink);
+    text-shadow: 0 0 8px rgba(255, 0, 128, 0.3);
+}
+
+/* Code blocks with neon glow */
+.dark .highlight {
+    border: 1px solid var(--synthwave-purple);
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.2);
+}
+
+/* Inline code */
+.dark code {
+    color: var(--synthwave-neon-green);
+    background: rgba(57, 255, 20, 0.1);
+}
+
+/* Tags */
+.dark .post-tags a {
+    background: linear-gradient(45deg, var(--synthwave-purple), var(--synthwave-pink));
+    color: white;
+    border: none;
+    text-shadow: none;
+}
+
+/* Scroll to top button */
+.dark .top-link {
+    background: var(--synthwave-pink);
+    border: 1px solid var(--synthwave-cyan);
+    box-shadow: 0 0 15px rgba(255, 0, 128, 0.4);
+}
+
+/* Selection highlight */
+.dark ::selection {
+    background: var(--synthwave-pink);
+    color: white;
+}
+
+/* Custom glow effect for headings */
+.dark h1,
+.dark h2,
+.dark h3 {
+    color: var(--synthwave-cyan);
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+}
+
+/* Terminal prompt styling */
+.dark .post-content pre code::before {
+    content: "$ ";
+    color: var(--synthwave-neon-green);
+}
