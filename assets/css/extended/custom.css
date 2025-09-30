@@ -1,267 +1,796 @@
-/* Synthwave color palette */
+/* ========================================
+   SYNTHWAVE HUGO BLOG - REFINED STYLES
+   ======================================== */
+
+/* ===== CATPPUCCIN MOCHA SYNTHWAVE COLOR PALETTE ===== */
 :root {
-    --synthwave-pink: #ff0080;
-    --synthwave-purple: #8a2be2;
-    --synthwave-cyan: #00ffff;
-    --synthwave-neon-green: #39ff14;
-    --synthwave-orange: #ff6600;
-    --synthwave-dark: #0a0a0a;
-    --synthwave-darker: #050505;
+    /* Catppuccin Mocha primary colors - professional synthwave adaptation */
+    --synthwave-electric-blue: #89b4fa;
+    --synthwave-neon-pink: #cba6f7;
+    --synthwave-deep-purple: #f5c2e7;
+    --synthwave-soft-cyan: #74c7ec;
+    --synthwave-terminal-green: #a6e3a1;
+    --synthwave-warning-orange: #fab387;
+
+    /* Additional Catppuccin Mocha colors */
+    --catppuccin-red: #f38ba8;
+    --catppuccin-yellow: #f9e2af;
+    --catppuccin-teal: #94e2d5;
+    --catppuccin-sky: #89dceb;
+    --catppuccin-lavender: #b4befe;
+    --catppuccin-rosewater: #f5e0dc;
+
+    /* Legacy compatibility */
+    --synthwave-pink: var(--synthwave-neon-pink);
+    --synthwave-purple: var(--synthwave-deep-purple);
+    --synthwave-cyan: var(--synthwave-electric-blue);
+    --synthwave-neon-green: var(--synthwave-terminal-green);
+    --synthwave-orange: var(--synthwave-warning-orange);
+
+    /* Catppuccin Mocha backgrounds */
+    --synthwave-dark: #1e1e2e;
+    --synthwave-darker: #181825;
+    --synthwave-darkest: #11111b;
+
+    /* Improved text hierarchy with better contrast */
+    --text-primary: #cdd6f4;
+    --text-secondary: #a6adc8;
+    --text-muted: #6c7086;
+    --text-accent: var(--synthwave-soft-cyan);
+
+    /* Professional backgrounds */
+    --bg-code: #1e1e2e;
+    --bg-card: rgba(30, 30, 46, 0.4);
+    --bg-card-hover: rgba(30, 30, 46, 0.6);
+    --bg-terminal: #181825;
+    --bg-highlight: #313244;
+
+    /* Spacing scale - 8px base for consistency */
+    --space-xs: 0.5rem;
+    /* 8px */
+    --space-sm: 1rem;
+    /* 16px */
+    --space-md: 1.5rem;
+    /* 24px */
+    --space-lg: 2rem;
+    /* 32px */
+    --space-xl: 3rem;
+    /* 48px */
+    --space-2xl: 4rem;
+    /* 64px */
+
+    /* Animation timing - optimized */
+    --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Custom text colors for dark theme */
+/* ===== THEME CONFIGURATION ===== */
 .dark {
-    /* Accent colors for links */
-    --primary: var(--synthwave-cyan);
-    --secondary: var(--synthwave-pink);
-    --tertiary: var(--synthwave-purple);
+    --primary: var(--synthwave-electric-blue);
+    --secondary: var(--synthwave-neon-pink);
+    --tertiary: var(--synthwave-deep-purple);
+    --accent: var(--synthwave-soft-cyan);
+    --success: var(--synthwave-terminal-green);
+    --warning: var(--synthwave-warning-orange);
 }
 
-/* Header styling */
+/* ===== TYPOGRAPHY & READABILITY ===== */
+
+/* Enhanced body text readability */
+.dark .post-content {
+    line-height: 1.8;
+    font-size: 1.0625rem;
+    /* 17px - optimal for reading */
+    color: var(--text-primary);
+}
+
+.dark .post-content p {
+    margin-bottom: var(--space-md);
+    color: var(--text-primary);
+    line-height: 1.8;
+}
+
+/* Refined heading hierarchy with clear visual distinction */
+.dark h1,
+.dark .post-content h1 {
+    color: var(--synthwave-electric-blue) !important;
+    text-shadow: 0 0 8px rgba(137, 180, 250, 0.35);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-lg);
+    line-height: 1.2;
+}
+
+.dark h2,
+.dark .post-content h2 {
+    color: var(--synthwave-neon-pink) !important;
+    text-shadow: 0 0 6px rgba(203, 166, 247, 0.3);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-md);
+    line-height: 1.3;
+}
+
+.dark h3,
+.dark .post-content h3 {
+    color: var(--synthwave-deep-purple) !important;
+    text-shadow: 0 0 5px rgba(245, 194, 231, 0.25);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+    line-height: 1.4;
+}
+
+.dark h4,
+.dark .post-content h4 {
+    color: var(--catppuccin-teal) !important;
+    text-shadow: 0 0 4px rgba(148, 226, 213, 0.2);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+    line-height: 1.4;
+}
+
+/* Better list styling */
+.dark .post-content ul,
+.dark .post-content ol {
+    margin: var(--space-md) 0;
+    padding-left: 2rem;
+}
+
+.dark .post-content li {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+}
+
+/* Improved link styling */
+.dark a {
+    color: var(--synthwave-electric-blue);
+    text-decoration-color: rgba(137, 180, 250, 0.3);
+    transition: var(--transition-fast);
+}
+
+.dark a:hover {
+    color: var(--synthwave-soft-cyan);
+    text-decoration-color: rgba(116, 199, 236, 0.6);
+}
+
+/* ===== HEADER & NAVIGATION ===== */
+
+/* Simplified logo with subtle glow */
 .dark .logo a {
-    color: var(--synthwave-pink);
-    text-shadow: 0 0 10px var(--synthwave-pink);
+    color: var(--synthwave-neon-pink);
+    text-shadow: 0 0 8px rgba(203, 166, 247, 0.3);
+    font-weight: 600;
+    transition: var(--transition-normal);
 }
 
-/* Menu items */
+.dark .logo a:hover {
+    text-shadow: 0 0 12px rgba(203, 166, 247, 0.5);
+    transform: translateY(-1px);
+}
+
+/* Professional menu styling */
 .dark #menu a {
-    color: var(--synthwave-cyan);
-    transition: all 0.3s ease;
+    color: var(--synthwave-soft-cyan);
+    transition: var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
 }
 
 .dark #menu a:hover {
-    color: var(--synthwave-pink);
-    text-shadow: 0 0 5px var(--synthwave-pink);
+    color: var(--synthwave-neon-pink);
+    text-shadow: 0 0 4px rgba(203, 166, 247, 0.4);
+    background: rgba(203, 166, 247, 0.08);
+    transform: translateY(-1px);
 }
 
-/* Post titles */
-.dark .post-title a {
-    color: var(--synthwave-pink);
-    text-shadow: 0 0 8px rgba(255, 0, 128, 0.3);
+/* Subtle animated underline for menu items */
+.dark #menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--synthwave-electric-blue), var(--synthwave-neon-pink));
+    transition: left var(--transition-normal);
+    border-radius: 1px;
 }
 
-/* Code blocks with neon glow */
-.dark .highlight {
-    border: 1px solid var(--synthwave-purple);
-    box-shadow: 0 0 10px rgba(138, 43, 226, 0.2);
+.dark #menu a:hover::before {
+    left: 0;
 }
 
-/* Inline code */
-.dark code {
-    color: var(--synthwave-neon-green);
-    background: rgba(57, 255, 20, 0.1);
-}
+/* ===== MAIN CONTENT STYLING ===== */
 
-/* Tags */
-.dark .post-tags a {
-    background: linear-gradient(45deg, var(--synthwave-purple), var(--synthwave-pink));
-    color: white;
-    border: none;
-    text-shadow: none;
-}
-
-/* Scroll to top button */
-.dark .top-link {
-    background: var(--synthwave-pink);
-    border: 1px solid var(--synthwave-cyan);
-    box-shadow: 0 0 15px rgba(255, 0, 128, 0.4);
-}
-
-/* Selection highlight */
-.dark ::selection {
-    background: var(--synthwave-pink);
-    color: white;
-}
-
-/* Custom glow effect for headings */
-.dark h1,
-.dark h2,
-.dark h3 {
-    color: var(--synthwave-cyan);
-    text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
-}
-
-/* Terminal prompt styling */
-.dark .post-content pre code::before {
-    content: "$ ";
-    color: var(--synthwave-neon-green);
-}
-
-/* === ENHANCED POLISH & ANIMATIONS === */
-
-/* Add smooth transitions everywhere */
-.dark * {
-    transition: color 0.2s ease, text-shadow 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-/* Pulse animation for the logo */
-.dark .logo a {
-    animation: subtle-pulse 3s ease-in-out infinite;
-}
-
-@keyframes subtle-pulse {
-
-    0%,
-    100% {
-        text-shadow: 0 0 10px var(--synthwave-pink);
-    }
-
-    50% {
-        text-shadow: 0 0 15px var(--synthwave-pink), 0 0 25px rgba(255, 0, 128, 0.5);
-    }
-}
-
-/* Hover effects for post cards */
-.dark .post-entry:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 255, 255, 0.15);
-}
-
-/* === ENHANCED TYPOGRAPHY === */
-
-/* Main title with gradient effect */
+/* Hero title with elegant gradient animation */
 .dark .main .profile .title {
     font-size: 3rem;
-    background: linear-gradient(45deg, var(--synthwave-cyan), var(--synthwave-pink));
+    background: linear-gradient(45deg, var(--synthwave-electric-blue), var(--synthwave-neon-pink), var(--synthwave-soft-cyan));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 1.2;
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease-in-out infinite;
 }
 
-/* Breadcrumbs styling */
-.dark .breadcrumbs a {
-    color: var(--synthwave-cyan);
-    opacity: 0.7;
+@keyframes gradient-shift {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
-.dark .breadcrumbs a:hover {
-    opacity: 1;
-    text-shadow: 0 0 3px var(--synthwave-cyan);
+/* Professional profile subtitle */
+.dark .main .profile .subtitle {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-top: var(--space-sm);
 }
 
-/* === ENHANCED SOCIAL ICONS === */
-
-/* Social icons glow */
-.dark .social-icons a {
-    transition: all 0.3s ease;
+/* Professional post titles */
+.dark .post-title a {
+    color: var(--synthwave-neon-pink);
+    text-shadow: 0 0 6px rgba(203, 166, 247, 0.25);
+    transition: var(--transition-fast);
+    font-weight: 600;
 }
 
-.dark .social-icons a:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 8px currentColor);
+.dark .post-title a:hover {
+    color: var(--synthwave-electric-blue);
+    text-shadow: 0 0 6px rgba(137, 180, 250, 0.35);
+    transform: translateY(-1px);
 }
 
-/* === ENHANCED CODE BLOCKS === */
-
-/* Better code block styling */
-.dark .highlight pre {
-    background: linear-gradient(135deg, #1a1a1a 0%, #0d1117 100%);
-    border-radius: 8px;
-}
-
-/* Copy button styling */
-.dark .copy-code {
-    background: var(--synthwave-purple);
-    color: white;
-    border: 1px solid var(--synthwave-cyan);
-    border-radius: 4px;
-    padding: 4px 8px;
-    font-size: 0.8em;
-    transition: all 0.2s ease;
-}
-
-.dark .copy-code:hover {
-    background: var(--synthwave-pink);
-    box-shadow: 0 0 10px rgba(255, 0, 128, 0.3);
-}
-
-/* === ENHANCED READING EXPERIENCE === */
-
-/* Better text readability */
-.dark .post-content p {
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.9);
-}
-
-/* Quote styling */
-.dark blockquote {
-    border-left: 3px solid var(--synthwave-cyan);
-    background: rgba(0, 255, 255, 0.05);
-    padding: 1rem 1.5rem;
-    margin: 1.5rem 0;
-    border-radius: 0 8px 8px 0;
-}
-
-/* Enhanced tag spacing and hover effects */
-.dark .post-tags a:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(255, 0, 128, 0.4);
-}
-
-/* Focus states for keyboard navigation */
-.dark a:focus,
-.dark button:focus {
-    outline: 2px solid var(--synthwave-cyan);
-    outline-offset: 2px;
-    border-radius: 2px;
-}
-
-/* Post meta text styling */
-.dark .post-meta {
-    color: rgba(0, 255, 255, 0.7);
-}
-
-/* Enhanced post entry styling */
+/* Refined post card design */
 .dark .post-entry {
+    border: 1px solid rgba(116, 199, 236, 0.15);
+    background: var(--bg-card);
+    backdrop-filter: blur(8px);
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transition: all var(--transition-normal);
+    padding: var(--space-lg);
+    position: relative;
+    overflow: hidden;
 }
 
-.dark .post-entry:hover .post-title {
-    color: var(--synthwave-cyan);
+.dark .post-entry::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--synthwave-soft-cyan), transparent);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
 }
 
-/* === TERMINAL-STYLE CODE BLOCKS === */
+.dark .post-entry:hover {
+    border-color: rgba(116, 199, 236, 0.4);
+    background: var(--bg-card-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(137, 180, 250, 0.12),
+        0 0 0 1px rgba(116, 199, 236, 0.1);
+}
 
-/* Bash/terminal code blocks with neon green text */
+.dark .post-entry:hover::before {
+    opacity: 1;
+}
+
+.dark .post-entry:hover .post-title a {
+    color: var(--synthwave-electric-blue);
+}
+
+/* Post meta styling */
+.dark .post-meta {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* ===== CODE BLOCKS & SYNTAX HIGHLIGHTING ===== */
+
+/* General code block improvements */
+.dark .highlight {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    margin: var(--space-md) 0;
+}
+
+.dark .highlight pre {
+    background: var(--bg-code);
+    padding: var(--space-md);
+    overflow-x: auto;
+    font-family: 'Fira Code', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Clean terminal styling */
 .dark .highlight[data-lang="bash"] pre,
 .dark .highlight[data-lang="shell"] pre,
 .dark .highlight[data-lang="console"] pre {
-    background: #0a0a0a !important;
-    border: 1px solid var(--synthwave-neon-green);
-    box-shadow: 0 0 20px rgba(57, 255, 20, 0.1);
+    background: var(--bg-terminal) !important;
+    border: 1px solid rgba(166, 227, 161, 0.3);
+    box-shadow: 0 4px 12px rgba(166, 227, 161, 0.08);
 }
 
 .dark .highlight[data-lang="bash"] pre code,
 .dark .highlight[data-lang="shell"] pre code,
 .dark .highlight[data-lang="console"] pre code {
-    color: var(--synthwave-neon-green) !important;
-    font-family: 'Fira Code', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
-    text-shadow: 0 0 3px rgba(57, 255, 20, 0.3);
+    color: var(--synthwave-terminal-green) !important;
+    text-shadow: 0 0 2px rgba(166, 227, 161, 0.3);
+    font-weight: 400;
 }
 
-/* Terminal prompt styling for bash blocks */
-.dark .highlight[data-lang="bash"] pre code::before {
-    content: "";
-    display: block;
-    margin-bottom: 0.5rem;
+/* Language-specific code block styling */
+.dark .highlight[data-lang="go"] pre {
+    border: 1px solid rgba(116, 199, 236, 0.3);
+    box-shadow: 0 4px 12px rgba(116, 199, 236, 0.08);
 }
 
-/* Make other code blocks stand out differently */
+.dark .highlight[data-lang="python"] pre {
+    border: 1px solid rgba(166, 227, 161, 0.3);
+    box-shadow: 0 4px 12px rgba(166, 227, 161, 0.08);
+}
+
+.dark .highlight[data-lang="javascript"] pre,
+.dark .highlight[data-lang="typescript"] pre {
+    border: 1px solid rgba(250, 179, 135, 0.3);
+    box-shadow: 0 4px 12px rgba(250, 179, 135, 0.08);
+}
+
 .dark .highlight[data-lang="yaml"] pre,
 .dark .highlight[data-lang="json"] pre,
 .dark .highlight[data-lang="diff"] pre {
-    border: 1px solid var(--synthwave-purple);
-    box-shadow: 0 0 15px rgba(138, 43, 226, 0.1);
+    border: 1px solid rgba(245, 194, 231, 0.3);
+    box-shadow: 0 4px 12px rgba(245, 194, 231, 0.08);
 }
 
-/* Specific styling for command output vs commands */
-.dark .post-content h2 code {
-    color: var(--synthwave-cyan);
-    background: rgba(0, 255, 255, 0.1);
-    padding: 2px 6px;
+/* Improved inline code styling */
+.dark code {
+    color: var(--synthwave-terminal-green);
+    background: rgba(166, 227, 161, 0.12);
+    padding: 0.2em 0.5em;
     border-radius: 4px;
     font-size: 0.9em;
-    text-shadow: 0 0 3px rgba(0, 255, 255, 0.3);
+    font-family: 'Fira Code', 'SF Mono', Monaco, monospace;
+    border: 1px solid rgba(166, 227, 161, 0.2);
+}
+
+/* Header code styling - matches header colors */
+.dark .post-content h1 code {
+    color: var(--synthwave-electric-blue);
+    background: rgba(137, 180, 250, 0.12);
+    border: 1px solid rgba(137, 180, 250, 0.2);
+    text-shadow: 0 0 3px rgba(137, 180, 250, 0.25);
+}
+
+.dark .post-content h2 code {
+    color: var(--synthwave-neon-pink);
+    background: rgba(203, 166, 247, 0.12);
+    border: 1px solid rgba(203, 166, 247, 0.2);
+    text-shadow: 0 0 3px rgba(203, 166, 247, 0.25);
+}
+
+.dark .post-content h3 code {
+    color: var(--synthwave-deep-purple);
+    background: rgba(245, 194, 231, 0.12);
+    border: 1px solid rgba(245, 194, 231, 0.2);
+    text-shadow: 0 0 3px rgba(245, 194, 231, 0.25);
+}
+
+/* Enhanced copy button */
+.dark .copy-code {
+    background: rgba(203, 166, 247, 0.9);
+    backdrop-filter: blur(4px);
+    color: white;
+    border: 1px solid rgba(203, 166, 247, 0.3);
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8em;
+    font-weight: 500;
+    transition: var(--transition-fast);
+    cursor: pointer;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+}
+
+.dark .copy-code:hover {
+    background: var(--synthwave-neon-pink);
+    box-shadow: 0 0 15px rgba(203, 166, 247, 0.4);
+    transform: translateY(-1px);
+}
+
+/* ===== ENHANCED CONTENT ELEMENTS ===== */
+
+/* Professional blockquotes */
+.dark blockquote {
+    border-left: 4px solid var(--synthwave-electric-blue);
+    background: rgba(137, 180, 250, 0.08);
+    padding: var(--space-md) var(--space-lg);
+    margin: var(--space-lg) 0;
+    border-radius: 0 8px 8px 0;
+    position: relative;
+    backdrop-filter: blur(2px);
+}
+
+.dark blockquote::before {
+    content: '"';
+    font-size: 2.5rem;
+    color: var(--synthwave-electric-blue);
+    position: absolute;
+    top: -0.3rem;
+    left: 1rem;
+    opacity: 0.2;
+    font-weight: 300;
+}
+
+.dark blockquote p {
+    color: var(--text-primary);
+    font-style: italic;
+    margin-bottom: 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Professional tag styling */
+.dark .post-tags {
+    margin-top: var(--space-lg);
+    gap: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dark .post-tags a {
+    background: linear-gradient(135deg, var(--synthwave-deep-purple), var(--synthwave-neon-pink));
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: var(--transition-fast);
+    position: relative;
+    overflow: hidden;
+    font-size: 0.85rem;
+}
+
+.dark .post-tags a:hover {
+    transform: scale(1.03) translateY(-1px);
+    box-shadow: 0 4px 15px rgba(203, 166, 247, 0.3);
+    background: linear-gradient(135deg, var(--synthwave-neon-pink), var(--synthwave-electric-blue));
+}
+
+/* Professional section dividers */
+.dark .post-content hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg,
+            transparent,
+            var(--synthwave-electric-blue),
+            var(--synthwave-soft-cyan),
+            transparent);
+    margin: var(--space-xl) 0;
+    opacity: 0.4;
+    border-radius: 1px;
+}
+
+/* ===== NAVIGATION & UI ELEMENTS ===== */
+
+/* Enhanced breadcrumbs */
+.dark .breadcrumbs {
+    margin-bottom: var(--space-lg);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.dark .breadcrumbs a {
+    color: var(--synthwave-soft-cyan);
+    opacity: 0.8;
+    position: relative;
+    transition: var(--transition-fast);
+}
+
+.dark .breadcrumbs a:hover {
+    opacity: 1;
+    text-shadow: 0 0 3px rgba(116, 199, 236, 0.4);
+}
+
+.dark .breadcrumbs a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--synthwave-soft-cyan);
+    transition: width var(--transition-normal);
+}
+
+.dark .breadcrumbs a:hover::after {
+    width: 100%;
+}
+
+/* Scroll to top button */
+.dark .top-link {
+    background: var(--synthwave-neon-pink);
+    border: 1px solid var(--synthwave-soft-cyan);
+    box-shadow: 0 0 15px rgba(203, 166, 247, 0.4);
+    border-radius: 50%;
+    transition: var(--transition-fast);
+}
+
+.dark .top-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(203, 166, 247, 0.6);
+}
+
+/* ===== SOCIAL ICONS & INTERACTIVE ELEMENTS ===== */
+
+.dark .social-icons a {
+    transition: var(--transition-normal);
+    border-radius: 8px;
+    padding: 0.75rem;
+    min-height: 48px;
+    min-width: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark .social-icons a:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px currentColor);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+
+/* Enhanced focus states */
+.dark a:focus-visible,
+.dark button:focus-visible {
+    outline: 2px solid var(--synthwave-soft-cyan);
+    outline-offset: 3px;
+    border-radius: 4px;
+    box-shadow: 0 0 0 4px rgba(116, 199, 236, 0.2);
+}
+
+/* Selection styling */
+.dark ::selection {
+    background: var(--synthwave-neon-pink);
+    color: white;
+    text-shadow: none;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .dark * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .dark .main .profile .title {
+        animation: none;
+    }
+}
+
+/* ===== ABOUT PAGE ENHANCEMENTS ===== */
+
+/* Terminal-style sections */
+.dark .post-content h2 code {
+    font-size: 1em;
+    padding: 0.4em 0.8em;
+    border-radius: 6px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    box-shadow: 0 0 8px rgba(203, 166, 247, 0.12);
+}
+
+/* Better spacing between sections */
+.dark .post-content h2:not(:first-child) {
+    margin-top: var(--space-2xl);
+}
+
+/* Professional contact section styling */
+.dark .post-content a[href^="mailto"],
+.dark .post-content a[href^="https://github"],
+.dark .post-content a[href^="https://linkedin"] {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, var(--synthwave-deep-purple), var(--synthwave-neon-pink));
+    color: white !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: var(--transition-fast);
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    min-height: 48px;
+    text-shadow: none;
+}
+
+.dark .post-content a[href^="mailto"]:hover,
+.dark .post-content a[href^="https://github"]:hover,
+.dark .post-content a[href^="https://linkedin"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(203, 166, 247, 0.3);
+    background: linear-gradient(135deg, var(--synthwave-neon-pink), var(--synthwave-electric-blue));
+}
+
+/* ===== TABLE OF CONTENTS IMPROVEMENTS ===== */
+
+.dark .toc {
+    background: var(--bg-card);
+    border: 1px solid rgba(116, 199, 236, 0.2);
+    border-radius: 8px;
+    padding: var(--space-md);
+    margin: var(--space-lg) 0;
+    backdrop-filter: blur(4px);
+}
+
+.dark .toc nav>ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+.dark .toc a {
+    color: var(--synthwave-soft-cyan);
+    text-decoration: none;
+    transition: var(--transition-fast);
+    display: block;
+    padding: 0.25rem 0;
+}
+
+.dark .toc a:hover {
+    color: var(--synthwave-neon-pink);
+    text-shadow: 0 0 3px rgba(203, 166, 247, 0.4);
+    padding-left: 0.5rem;
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+
+@media (max-width: 768px) {
+
+    /* Improve mobile typography */
+    .dark .main .profile .title {
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
+
+    .dark .post-content {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    /* Better mobile navigation */
+    .dark #menu a {
+        padding: 0.75rem 1rem;
+        margin: 0.25rem;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Mobile code blocks */
+    .dark .highlight pre {
+        padding: var(--space-sm);
+        font-size: 0.85rem;
+    }
+
+    .dark .copy-code {
+        position: static;
+        margin-top: var(--space-sm);
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Optimize mobile card hover */
+    .dark .post-entry:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 15px rgba(137, 180, 250, 0.1);
+    }
+
+    /* Better mobile spacing */
+    .dark .post-entry {
+        padding: var(--space-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .dark .main .profile .title {
+        font-size: 1.8rem;
+    }
+
+    .dark #menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .dark h1,
+    .dark .post-content h1 {
+        font-size: 2rem;
+    }
+
+    .dark h2,
+    .dark .post-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .dark .post-entry {
+        padding: var(--space-sm);
+    }
+}
+
+/* ===== PERFORMANCE OPTIMIZATIONS ===== */
+
+/* Efficient GPU acceleration for key animated elements */
+.dark .main .profile .title {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+/* Optimize hover effects with targeted will-change */
+.dark .post-entry:hover,
+.dark .social-icons a:hover,
+.dark .post-tags a:hover {
+    will-change: transform;
+}
+
+/* Clean up will-change after hover */
+.dark .post-entry,
+.dark .social-icons a,
+.dark .post-tags a {
+    will-change: auto;
+}
+
+/* ===== PRINT STYLES ===== */
+
+@media print {
+    .dark {
+        --text-primary: #000;
+        --text-secondary: #333;
+    }
+
+    .dark .post-content {
+        color: #000 !important;
+    }
+
+    .dark h1,
+    .dark h2,
+    .dark h3 {
+        color: #000 !important;
+        text-shadow: none !important;
+    }
+
+    .dark .highlight {
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+    }
+
+    .dark code {
+        background: #f5f5f5 !important;
+        color: #000 !important;
+    }
 }
