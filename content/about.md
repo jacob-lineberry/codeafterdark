@@ -17,7 +17,7 @@ ShowWordCount: false
 
 ## $ `whoami`
 
-I'm Jacob Lineberry, Senior Cloud Engineer at Chewy. I build platform tooling and infrastructure for hundreds of engineering teams.
+I'm Jacob Lineberry and I work as a Cloud Engineer at Chewy. I build platform tooling and infrastructure for engineering teams.
 
 ## $ `cat ~/README.md`
 
