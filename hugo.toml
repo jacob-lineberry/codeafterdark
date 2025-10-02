@@ -34,9 +34,9 @@ author = 'Jacob Lineberry'
 defaultTheme = 'dark'
 disableThemeToggle = true
 DateFormat = 'Jan 2, 2006'
-ShowReadingTime = true
+ShowReadingTime = false
 ShowShareButtons = false
-ShowPostNavLinks = true
+ShowPostNavLinks = false
 ShowBreadCrumbs = true
 ShowCodeCopyButtons = true
 ShowWordCount = false
@@ -45,11 +45,11 @@ UseHugoToc = true
 disableSpecial1stPost = false
 disableScrollToTop = false
 comments = false
-hidemeta = false
+hidemeta = true
 hideSummary = false
 ShowToc = true
 TocOpen = true
-ShowLastMod = true
+ShowLastMod = false
 hideFooter = false
 showRelatedPosts = true
 
@@ -63,12 +63,16 @@ Code, cloud, and late-night thoughts.
 
 # Clean social presence
 [[params.socialIcons]]
-name = 'LinkedIn'
-url = 'https://www.linkedin.com/in/jacoblineberry/'
+name = 'discord'
+url = 'https://discord.gg/JKGyDs7R'
 
 [[params.socialIcons]]
 name = 'github'
 url = 'https://github.com/jacob-lineberry'
+
+[[params.socialIcons]]
+name = 'LinkedIn'
+url = 'https://www.linkedin.com/in/jacoblineberry/'
 
 [[params.socialIcons]]
 name = 'email'
