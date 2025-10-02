@@ -53,7 +53,7 @@ body,
 
 /* Logo - use yellow accent */
 .logo a {
-    color: var(--accent-yellow);
+    color: var(--electron);
     font-weight: 700;
     text-shadow: 0 0 15px rgba(223, 254, 124, 0.3);
 }
