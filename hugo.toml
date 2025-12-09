@@ -61,22 +61,22 @@ content = """
 Code, cloud, and late-night thoughts.
 """
 
-# # Clean social presence
-# [[params.socialIcons]]
-# name = 'discord'
-# url = 'https://discord.gg/JKGyDs7R'
+# Clean social presence
+[[params.socialIcons]]
+name = 'discord'
+url = 'https://discord.gg/JKGyDs7R'
 
-# [[params.socialIcons]]
-# name = 'github'
-# url = 'https://github.com/jacob-lineberry'
+[[params.socialIcons]]
+name = 'github'
+url = 'https://github.com/jacob-lineberry'
 
-# [[params.socialIcons]]
-# name = 'LinkedIn'
-# url = 'https://www.linkedin.com/in/jacoblineberry/'
+[[params.socialIcons]]
+name = 'LinkedIn'
+url = 'https://www.linkedin.com/in/jacoblineberry/'
 
-# [[params.socialIcons]]
-# name = 'email'
-# url = 'mailto:jlineberry@gmail.com'
+[[params.socialIcons]]
+name = 'email'
+url = 'mailto:jacob@codeafterdark.dev'
 
 [params.code]
 copy = true
